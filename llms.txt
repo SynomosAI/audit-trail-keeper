@@ -1,0 +1,18 @@
+# audit-trail-keeper
+
+> 防篡改审计轨迹存储层：append-only JSONL、哈希链签名、五字段组（identity/request/model/policy/integrity），满足 EU AI Act Art.12 日志保留要求。
+
+`audit-trail-keeper` 是 SynomosAI 生态的一个 Agent Skill，作为工作流的审计轨迹存储与证据层。
+
+## 核心
+
+- [README.md](https://github.com/SynomosAI/audit-trail-keeper/blob/main/README.md): 项目说明与快速开始
+- [SKILL.md](https://github.com/SynomosAI/audit-trail-keeper/blob/main/SKILL.md): 技能主文件（字段组 / 追加协议 / 验证能力）
+- [LICENSE.md](https://github.com/SynomosAI/audit-trail-keeper/blob/main/LICENSE.md): MIT License
+
+## 可选
+
+- [llms-full.txt](https://github.com/SynomosAI/audit-trail-keeper/blob/main/llms-full.txt): 完整文本
+- [AGENTS.md](https://github.com/SynomosAI/audit-trail-keeper/blob/main/AGENTS.md): Agent 工作指引
+- [SECURITY.md](https://github.com/SynomosAI/audit-trail-keeper/blob/main/SECURITY.md): 安全策略
+- [README.en.md](https://github.com/SynomosAI/audit-trail-keeper/blob/main/README.en.md): 英文版说明
