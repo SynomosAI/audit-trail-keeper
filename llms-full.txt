@@ -1,0 +1,40 @@
+# audit-trail-keeper — 完整文本
+
+## 这是什么
+
+`audit-trail-keeper` 是一个 Agent Skill，提供防篡改审计轨迹存储能力。以 append-only JSONL 记录每一次模型决策，哈希链签名保证不可篡改。
+
+## 五个字段组
+
+1. identity：actor / subject / role
+2. request：input / intent / context ref
+3. model：model id / version / config
+4. policy：active policy id / rule version
+5. integrity：prev_hash + record_hash + signature
+
+## 能力
+
+- 追加：只追加，不修改、不删除
+- 查询：按时间范围、模型版本、策略版本回查
+- 验证：哈希链重算 + 签名校验
+- 导出：EU AI Act Art.12（≥6 个月保留）/ FDA / ISO 42001 格式证据包
+
+## 快速开始
+
+```bash
+git clone https://github.com/SynomosAI/audit-trail-keeper.git
+cd audit-trail-keeper
+cat SKILL.md
+```
+
+## 触发词
+
+审计轨迹 / audit trail / 防篡改 / 证据存储 / 日志保留 / 合规证据 / EU AI Act。
+
+## 许可与权利
+
+MIT License。© 2026 注册老炮@MedXpert。完整条款见 LICENSE.md。
+
+## 链接
+
+- 仓库: https://github.com/SynomosAI/audit-trail-keeper
